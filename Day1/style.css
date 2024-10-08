@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling the table that contains the form */
+table {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+/* Table header */
+td[colspan="2"] {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Table rows */
+td {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Input fields and select styling */
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], input[type="file"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit and Reset buttons */
+input[type="submit"], input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* Form responsiveness */
+@media screen and (max-width: 500px) {
+    table {
+        width: 100%;
+    }
+}
